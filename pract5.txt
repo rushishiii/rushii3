@@ -1,0 +1,15 @@
+// practical 5
+import pandas as pd
+data = pd.read_csv("C:/Users/Admin/Downloads/archive1/iris.csv")
+data.head()
+data.tail()
+data.shape
+data.isnull()
+data.isna()
+data.isna().sum()
+import scipy.integrate as integrate
+import scipy.special as special
+result = integrate.quad(lambda x: special.jv(2.5,x),0,4.5)
+result
+from numpy import sqrt, sin, cos,pi
+I = sqrt(2/pi)*(18.0/27*sqrt(2)*cos(4.5)~ 4.0/27*sqrt(2)*sin(4.5) +sqrt(2*pi) * special.fresnel(3/sqrt(pi))[0])

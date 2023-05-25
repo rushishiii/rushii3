@@ -1,0 +1,28 @@
+// practical 7
+
+import matplotlib.pyplot as plt
+a = [1,2,3,4,5,6,5,4,3,2,1]
+plt.plot(a)
+b = [10,20,30,40,50,60,50,40,30,20,10]
+plt.plot(a,b)
+plt.xlabel('year')
+plt.ylabel('Yield(tones per hector)')
+plt.plot(a)
+plt.plot([1,2,3],[4,5,1])
+plt.show()
+x = [1,2,3]
+y = [10,11,12]
+plt.plot(x,y)
+plt.title("Line graph")
+plt.ylabel('y-axis')
+plt.xlabel('x-axis')
+plt.show()
+import seaborn as sns
+df = sns.load_dataset('titanic')
+df
+df = df.groupby('who')['fare'].sum().to_frame().reset_index()
+plt.barh(df['who'],df['fare'],color =['#F0F8FF','#E6E6FA','#B0E0E6'])
+plt.title('chart title')
+plt.xlabel('x axis')
+plt.ylabel('yaxis')
+plt.show()
