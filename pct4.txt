@@ -1,0 +1,26 @@
+import pandas as pd
+import numpy as np
+data ={"Roll":[10,20,30,40,50,60,70],
+"Age":[12,14,16,18,20,12,16],
+"Name":['a','b','c','d','e','f','g']}
+block =pd.DataFrame(data)
+block
+
+block.loc[[0,1,3]]
+
+block.loc[0:2,['Age','Name']]
+
+block.iloc[[0,2,3,4],[0,1]]
+
+arr =np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+
+
+newarr=arr.reshape(4,3)
+newarr
+
+df=pd.read_csv("")
+
+
+df1=df[:25]
+df2= df[25:]
+
